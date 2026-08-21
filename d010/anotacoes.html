@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações sobre caixas e bordas</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+            max-width: 1000px;
+        }
+        ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        }
+        li{
+            font-weight: bolder;
+        }
+        div{
+            display: inline-table;
+            text-align: center;
+            background-color: dimgray;
+            border: 5px  solid black;
+            width: 280px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Anotações</h1>
+    <hr>
+    <h2>Caixas</h2>
+    <p>Uma caixa é o espaço que um elemento ocupa. É possivel utilizar caixas para guardar outras caixas, essa relação parecida com uma boneca russa é chamada de <strong>aninhamento</strong>. Propriedades de uma caixa:</p>
+    <ol>
+        <li>height - altura</li> <li>width - largura</li> <li>border - borda</li> <li>padding - preenchimento (espaço da borda até o conteudo)</li> <li>margin - margem (espaço da borda pra fora)</li> <li>outline - contorno (espaço em seguida da borda)</li>
+    </ol>
+    <p>Existem 2 tipos de borda:</p>
+    <div><br><strong>Box-level</strong> -> Sempre vai começar uma nova linha e vai ocupar a largural total do elemento onde ele está contido ou do body. Exemplo: div, h1-h6,p,video</div>
+    <div><br><strong>Inline-level</strong> -> Não vai começar em uma nova linha (começara no ponto que for definido) e a largura vai ocupar o tamanho relativo ao conteúdo. Exemplo: span,a,strong,em</div>
+    <hr>
+    <p>Para que a margem fique automaticamente no centro vertical, podemos usar <strong>margin:auto;</strong></p>
+    <h2>Grouping Tags e Semantic Tags</h2>
+    <p>Antes do HTML 5 só existiam 2 tags de agrupamento: div (block-level) e span (inline-level). Entretanto, com a chegada do HTML 5 surgiram as tags semânticas de agrupamento, são elas: <ol> <li>Header - Cabeçalho</li> <li>Nav - Área que possui os links de navegação pela estrutura da página (pode estar dentro da header)</li> <li>Main - Conteudo principal do site</li> <li>Footer - Rodapé</li> <li>Section - Seções de conteúdo (pode ficar dentro da main)</li> <li>Article - Conteúdo que pode ser lido independente (blog, fórum, notícia,etc...) </li> <li>Aside - Conteúdo periférico e completar</li></ol></p>
+    <img src="imagem.jpeg" alt="">
+    <hr>
+    <h2>Vértices arredondadas</h2>
+    <p>Podemos deixar as vértices de uma caixa arrendoda através do <strong>"border-radius"</strong>. Podemos adicionar apenas um valor que servirá para os 4 cantos ou definir 4 valores para cada canto.</p>
+    <h2>Bordas Personalizadas</h2>
+    <p>Também é possivel importar bordas. Basta utilizar <strong>"border-image-source"</strong> e indicar o caminho para a imagem da borda, <strong>é preciso existir um "border" para alocar espaço</strong>. Existem alguns comandos que auxiliam na configuração dessa borda personalizada, são eles: <strong>"border-image-slice" e "border-image-repeat". O repeat pode ser stretch (arrasta a imagem de acordo com o tamanho do conteúdo) ou repeat (repete a imagem de acordo com o tamanho do conteúdo). O slice serve para indicar como a imagem deve ser recortada para definir a borda.</strong></p>
+    <hr>
+    <h2>Variáveis em CSS</h2>   
+    <p>Podemos definir variáveis em CSS para facilitar, exemplo: invés de repetir o código de uma cor, podemos definir uma variável como cor principal que contenha o código da cor. Para isso, devemos utilizar a pseudo-classe <strong>":root{}"</strong> e declarar dentro dela as nossa variáveis. Para declarar usamos a seguinte notação "--nome:valor;". Exemplo:</p> <p>  :root { <br>
+    --cor0: #siw828 <br> --cor-1:#2fa868 <br> }</p>
+    <h2>Seleção global</h2>
+    <p>Uma forma de selecionar todos os elementos no CSS é utilizar <strong>*{}</strong>, dessa forma conseguimos fazer configurações "globais".</p>
+    <hr>
+    <h2>Responsividade para sites</h2>
+    <p>Para trabalhar com largura e altura adaptáveis, utilizaremos tamanhos mínimos e máximos. Dessa forma, podemos definir uma tamanho máximo para que o conteúdo não fique esticado em telas grandes e tamanho mínimos para que o conteúdo não fique minúsculo.</p>
+    <ul> <li> <strong>min-width</strong></li> <li> <strong>max-width</strong> </li></ul>
+    <p>Para imagens vamos utilizar <strong>"picture"</strong> e adicionar diferentes <strong>"source"</strong> dentro dele, assim é possivel ter imagens de diferentes tamanhos para telas diferentes. Exemplo:</p>
+    <p>&lt;picture&gt;<br> &lt;source media="(max-width: 800px)" srcset="fotopequena.jpg"&gt; <br> &lt;img src="foto.jpg" alt = "foto"&gt;<br> &lt;picture&gt;</p>
+    <hr>
+    <h2>Outros</h2>
+</body>
+</html>

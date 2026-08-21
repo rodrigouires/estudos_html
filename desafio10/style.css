@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body{
+    margin: auto;
+    color: white;
+}
+
+header{
+    text-align: center;
+    background-color: rgb(12, 17, 35);
+    padding: 20px;
+}
+div{
+    text-align: left;
+}
+div > a > img{
+    max-width: 200px;
+}
+header > h1{
+    margin: 0px;
+    font-size: 3em;
+}
+
+header > p{
+    margin-bottom: 35px;
+    margin-top: 3px;
+}
+nav{
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5p;
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border: 1px,solid,white;
+}
+
