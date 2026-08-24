@@ -10,17 +10,16 @@
 body{
     margin: auto;
     color: white;
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0),rgb(12, 17, 35),rgb(0,0,0));
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-color: black;
 
 }
 
 header{
     text-align: center;
-    padding: 20px;
-    padding-top: 0px;
     border-bottom: 2px double var(--cor02);
+    background-color: black;
 }
 div{
     margin-top: 15px;
@@ -44,11 +43,41 @@ nav > a{
     padding: 20px;
     border: 2px solid white;
     margin-left: 2px;
-    margin-top: 10px;
+    margin-top: 5px;
     display: inline-block;
 }
 
 nav > a:hover{
     background-color: rgba(255, 255, 255, 0.097);
     border: 2px solid var(--cor02);
+}
+
+main{
+    margin-top: -15px;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0),rgb(12, 17, 35),rgb(0,0,0));
+
+}
+
+main > div > img{
+    max-width: 600px;
+    display: inline;
+    width: 60%;
+    margin-top: 20px;
+}
+
+main > div > h2{
+    display: inline-block;
+    width: 1%;
+    margin-right: 20%;
+    margin-left: 15%;
+    margin-bottom: 4%;
+    margin-top: 20px;
+    color: #e7e52e;
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
 }
