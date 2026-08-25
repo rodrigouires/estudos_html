@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anotações sobre caixas e bordas</title>
+    <title>Anotações</title>
     <style>
         body{
             background-color: aquamarine;
@@ -66,6 +66,32 @@
     <p>Para imagens vamos utilizar <strong>"picture"</strong> e adicionar diferentes <strong>"source"</strong> dentro dele, assim é possivel ter imagens de diferentes tamanhos para telas diferentes. Exemplo:</p>
     <p>&lt;picture&gt;<br> &lt;source media="(max-width: 800px)" srcset="fotopequena.jpg"&gt; <br> &lt;img src="foto.jpg" alt = "foto"&gt;<br> &lt;picture&gt;</p>
     <hr>
+    <h2>Imagens de fundo</h2>
+    <p>Para adicionar imagens de fundo vamos utilizar a mesma função que usamos para degrade: <strong>"background-image:"</strong>. Porém, vamos utilizar dentro dela uma nova função: <strong>"url()"</strong> e dentro dessa função colocaremos o endereço para nossa imagem de fundo. Veja o exemplo abaixo</p>
+    <p>
+    div{ <br>
+    &emsp;    background-image: url(imagens/endereco) <br>
+    }</p>
+    <p>Além disso, existem mais alguma configurações possíveis:</p>
+    <ol>
+        <li>"background-size: ---px (largura) ---px (altura)" - define o tamanho da imagem. Aceita também: contain (garante que a imagem seja 100% exibida, mesmo que isso gere barras) e cover (corta a imagem para que caiba)</li>
+        <li>"background-repeat:" - define a repetição da imagem, aceita: repeat (repetição padrão do background image), no-repeat (sem repetição), repeat-x (repeticão no eixo x) e repeat-y (repetição no eixo y)</li>
+        <li>"background-position: ---- ----" define a posição do fundo, aceita: left, right, center, bottom e top para representar a posição</li>
+        <li>"background-attachment" define o vínculo do fundo em relação ao conteúdo. Por padrão vem como "scroll" (fundo rola junto com o conteúdo), mas também é aceito fixed (fundo fixo)</li>
+    </ol>
+    <p>Além disso existe o shorthand <strong>"background"</strong>, a ordem é: color > image > position > repeat > attachment. O <strong>background-size</strong> deve ser definido fora do shorthand.</p>
+    <p><strong>IMPORTANTE!!</strong> é recomendado que se defina uma cor de fundo, mesmo que o fundo seja uma imagem, pois a imagem pode demorar para ser carregada</p>
+    <hr>
+    <h2>Alinhamento vertical</h2>
+    <p>Para alinhar um elemento dentro de uma caixa, devemos seguir alguns passos:</p>
+    <ol>
+        <li>Definir a posição da caixa externa e do conteúdo. A caixa externa deve ter "position:relative" e o conteúdo deve ter "position:absolute"</li>
+        <li>Agora que há a definição das posições, podemos definir um posicionamento para o conteúdo por ele ter position:absolute, então vamos definir "left:50%" e "top:50%".</li>
+        <li>Você vai notar que o conteúdo não ficou centralizado, isso se dá porque a centralizão ocorrida foi do canto superior esquerdo e não do centro do conteúdo. Para centralizar seu centro vamos ter que fazer uma "tradução", basta usar transform: translate(-50%,-50%). Assim, o centro do conteúdo será centralizado no centro da caixa. </li>
+    </ol>
+    <p>É importante citar que o transform: translate(0,0) pode ser usado para movimentar o objeto dentro da caixa. O primeiro valor se refere a esquerda se for negativo e a direita se for positivo, o segundo se refere a cima se for negativo e a baixo se for negativo.</p>
+    <hr>
     <h2>Outros</h2>
+    <p>Para dar espaços em html, podemos utilizar a <strong>"&emsp ;"</strong></p>
 </body>
 </html>
