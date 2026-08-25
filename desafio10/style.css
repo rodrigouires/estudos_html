@@ -60,7 +60,7 @@ main{
 main > div > img{
     max-width: 600px;
     display: inline-block;
-    width: 60%;
+    height: auto;
     margin-top: 20px;
 }
 
