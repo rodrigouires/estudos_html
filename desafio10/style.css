@@ -80,7 +80,9 @@ main > div > h2{
     background-color: black;
     padding: -40px;
 }
-
+strong{
+    color: #e7e52e;
+}
 footer{
     text-align: center;
     background-color: rgb(12, 17, 35);
