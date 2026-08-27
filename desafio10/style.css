@@ -77,11 +77,10 @@ main{
     background-size: cover;
     background-position: center center;
     padding: 40px;
+
 }
 
-
-
-main > div > h2{
+main > div > h1{
     font-family: "Bebas Neue", sans-serif;
     width: 10%;
     color: #e7e52e;
@@ -92,14 +91,25 @@ main > div > h2{
 .camionetes{
     margin-top: -15px;
     background-color: black;
-    padding: 7px;
+    padding: 18px 20px;
     font-family: "Roboto Condensed", sans-serif;
-
 }
 span{
     color: #e7e52e;
     margin-right: 5px;
     margin-left: 5px;
+}
+
+.localizacao{
+    background-color: var(--cor04);
+    margin-top: -15px;
+    padding-top: 1px;
+}
+.localizacao > h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5em;
+    
+
 }
 
 strong{
@@ -109,4 +119,9 @@ footer{
     text-align: center;
     background-color: rgb(12, 17, 35);
     margin-top: 10px;
+}
+
+.informacoes{
+    font-size: 0.8em;
+    border-top: 3px solid rgba(0, 0, 0, 0.378);
 }
