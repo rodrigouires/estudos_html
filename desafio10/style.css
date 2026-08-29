@@ -22,7 +22,7 @@ body{
 
 header{
     text-align: center;
-    border-bottom: 2px double var(--cor02);
+    border-bottom: 2px double #a0e72e;
     background-color: rgb(12, 17, 35);
     position: relative;
     min-height: 105px;
@@ -76,7 +76,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding: 40px;
+    padding: 60px;
 
 }
 
@@ -89,11 +89,13 @@ main > div > h1{
 }
 
 .camionetes{
-    margin-top: -15px;
+    margin-top: 0px;
     background-color: black;
     padding: 18px 20px;
     font-family: "Roboto Condensed", sans-serif;
-}
+    text-align: center;} 
+
+
 span{
     color: #e7e52e;
     margin-right: 5px;
@@ -102,14 +104,13 @@ span{
 
 .localizacao{
     background-color: var(--cor04);
-    margin-top: -15px;
+    margin-top: 0px;
     padding-top: 1px;
 }
 .localizacao > h3 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 1.5em;
-    
-
+    font-weight: 50;
 }
 
 strong{
