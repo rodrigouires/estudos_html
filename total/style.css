@@ -140,7 +140,7 @@ td{
 }
 #icone{
     font-size: 2em;
-    color: var(--cor02);
+    color: white;
 }
 td:last-child{
     border-right: none;
@@ -155,9 +155,18 @@ td > h2{
     margin-left: 10px;
     font-size: 1.5em;
 }
+.redes:hover{
+    color: var(--cor02);
+}
 .redes:first-child{
     margin-left: none;
+
 }
+
+.titulo_tabela{
+    font-size: 1.5em    ;
+}
+
 .informacoes{
     font-size: 0.8em;
     border-top: 2px solid rgba(255, 255, 255, 0.187);
