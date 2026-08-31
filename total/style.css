@@ -76,7 +76,7 @@ main{
     background-size: cover;
     background-position: center center;
     padding: 60px;
-
+    height: 523px;
 }
 
 main > div > h1{
