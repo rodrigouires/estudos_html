@@ -95,6 +95,11 @@
     <p><strong>Não se usa tabela para criar estrutura do site.</strong> As tabelas seguem hieraquias, veja: <br> Tabela Simples <br> table = tabela <br> &emsp; tr -table row = linha de tabela <br> &emsp; th - table header = cabeçalho de tabela <br> &emsp; td - table data = dado de tabela</p>
     <p>Um recurso útil é o <strong>border-collapse</strong>. É possivel definir o alinhamento horizontal com o <strong>text aling</strong> e o vertical com <strong>vertical-aling</strong></p>
     <p>Hieraquia para tabelas grandes: <br> table <br> &emsp; thead - pode ter tr,td,th <br> &emsp; tbody - pode ter tr,td,th <br> &emsp; tfoot - pode ter tr,td, th</p>
+    <p>Para definir um titulo as tabelas é possivel usar a tag <strong>"caption"</strong>. Também é importante definir um escopo para as tabelas, mesmo que não gere mudanças visuais, é feito para melhor visibilidade dos mecanismo de busca. O <strong>"scope"</strong> pode assumir os seguintes valores: <strong>col (toda a coluna abaixo), row (toda a linha a direita), colgroup (se refere a um grupo de colunas) ou rowgroup (se refere a um grupo de linhas)</strong></p>
+    <p>Outro recurso que pode ser usado para tabelas e até além é a pseudo-classe <strong>":nth-child()"</strong>. Ao colocar um valor como ":nth-child(2n)",essa pseudo-classe vai repetir os efeitos de 2 em 2 "filhos". Um de seus usos em tabela é o efeito "zebrado". Além de valores, também é possivel usar par (even) ou impar (odd)</p>
+    <p>Apesar de ser um recurso que não funciona em todos os navegadores, é possivel fixar o cabeçalho de tabelas muito grande, o passo a passo é: 1. Definir a position da tabela como relative 2. Definir o position do cabeçalho como sticky e top: -1px 3. Caso o cabeçalho tenha um background, é preciso redefinir</p>
+    <h2>Mesclagem de tabelas</h2>
+    <p>Para expardir celulas horizontalmente ou verticalmente, vamos usar <strong>"&lt;td colspan= x&gt;"</strong> sendo x o número de colunas que queremos mesclar ou <strong>&lt;td rowspan= x&gt;</strong> sendo x o número de linhas que queremos mesclar</p>
     <hr>
     <h2>Outros</h2>
     <p>Para dar espaços em html, podemos utilizar a <strong>"&emsp ;"</strong></p>
