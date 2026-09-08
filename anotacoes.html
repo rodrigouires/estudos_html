@@ -30,10 +30,28 @@
             width: 280px;
             height: 150px;
         }
+        header{
+            border: 2px solid black;
+            padding: 40px;
+            text-align: center;
+        }
+        a{
+            border: 2px solid black;
+            padding: 30px;
+            margin-left: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            background-color: rgb(182, 242, 182);
+        }
     </style>
 </head>
 <body>
-    <h1>Anotações</h1>
+    <h1>Anotações 1</h1>
+    <header>
+        <a href="anotacoes.html">Home</a> <a href="anotacoes2.html">Parte 2</a>
+    </header>
     <hr>
     <h2>Caixas</h2>
     <p>Uma caixa é o espaço que um elemento ocupa. É possivel utilizar caixas para guardar outras caixas, essa relação parecida com uma boneca russa é chamada de <strong>aninhamento</strong>. Propriedades de uma caixa:</p>
@@ -100,10 +118,15 @@
     <p>Apesar de ser um recurso que não funciona em todos os navegadores, é possivel fixar o cabeçalho de tabelas muito grande, o passo a passo é: 1. Definir a position da tabela como relative 2. Definir o position do cabeçalho como sticky e top: -1px 3. Caso o cabeçalho tenha um background, é preciso redefinir</p>
     <h2>Mesclagem de tabelas</h2>
     <p>Para expardir celulas horizontalmente ou verticalmente, vamos usar <strong>"&lt;td colspan= x&gt;"</strong> sendo x o número de colunas que queremos mesclar ou <strong>&lt;td rowspan= x&gt;</strong> sendo x o número de linhas que queremos mesclar</p>
+    <h2>Agrupamento de tabelas</h2>
+    <p>Para utilizar um estilo em uma linha inteira da tabela, basta determinar uma classe para o <strong>tr</strong> e definir o <strong>style</strong>. Já para colunas é diferente, é preciso definir um <strong>colgroup</strong> e dentro dele definir um <strong>col</strong> para cada coluna, adicionar uma classe para a coluna que deve ser estilizada e definir o <strong>style</strong>.</p>
+    <h2>Responsividade em tabelas</h2>
+    <p>Uma forma de tornas as tabelas responsivas é envelopar a tabela com uma <strong>div</strong> e utilizar <strong>overflow:auto</strong>dentro do <strong>style</strong>. Dessa forma, se a tabela for maior do que a tela, apenas rolagem será apenas para a tabela </p>
     <hr>
     <h2>Outros</h2>
     <p>Para dar espaços em html, podemos utilizar a <strong>"&emsp ;"</strong></p>
     <p><strong>div / span</strong></p>
     <p>Para dar o efeito de paralax, basta fixar a imagem de fundo usando o background-attached: fixed</p>
+    <p>Uma forma de sumir com a barra lateral é usando <strong>::webkit-scrollbar{ <br> width: 0px; <br> height:0px; }</strong></p>
 </body>
 </html>

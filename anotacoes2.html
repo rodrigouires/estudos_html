@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações 2</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+            max-width: 1000px;
+        }
+        h1{
+            text-align: center;
+        }
+        ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        }
+        li{
+            font-weight: bolder;
+        }
+        div{
+            display: inline-table;
+            text-align: center;
+            background-color: dimgray;
+            border: 5px  solid black;
+            width: 280px;
+            height: 150px;
+        }
+        header{
+            border: 2px solid black;
+            padding: 40px;
+            text-align: center;
+        }
+        a{
+            border: 2px solid black;
+            padding: 30px;
+            margin-left: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            background-color: rgb(182, 242, 182);
+        }
+    </style>
+</head>
+<body>
+    <h1>Anotações 2</h1>
+    <header>
+        <a href="anotacoes.html">Home</a> <a href="anotacoes2.html">Parte 2</a>
+    </header>
+    <hr>
+    <h2>Iframe</h2>
+    <p>Iframe é um "quadro em linha". Permite exibir uma janela de outro site no seu site. Alguns sites ou até navegadores bloquem o Iframe, caso o navegador bloqueie (principalmente os de celulares), é recomendado botar o link entre o &gt;&lt; do Iframe, assim o link será mostrado caso não tenha compatibilidade com o Iframe. O tamanho padrão de um Iframe é 300x150 </p>
+    <p>É possivel utilizar um Iframe para abrir diferentes links de acordo com a opção do usuario, basta dar um <strong>"name:..."</strong> dentro de sua tag e preencer o <strong>"taget:..."</strong> do link com o nome escolhido. O problema é que dessa forma, o iframe fica "vazio" até que o conteúdo seja escolhido. Para contornar isso, existem 2 soluções: definir por padrão uma url que ele deve mostrar até que a escolha seja feita ou utilizar <strong>srcdoc="..."</strong> para digitar o código HTML dentro do próprio iframe.</p>
+    <p>Iframe não é muito recomendado para conteúdos importantes para o site, possibilidade de falhas. Além disso, outra problema pode ser a segurança, ao incluir um site terceiro no seu próprio site, você pode estar submetendo seus usuários a sites perigosos. Uma das formas de proteção é adicionar <strong>"sandbox="sandbox""</strong> dentro da tag do iframe, assim não será possivel que terceiros coletem dados através de formulários, existem outras opções de sandbox também. Outra forma é adicionar <strong>"referrerpolicy="no-referrer""</strong> para que o site terceiro não capture dados para fins de propaganda.</p> 
+    <p>Através de iframes é possivel adicionar vídeos, mapas, apresentações de slides Google,etc..</p>
+    <hr>
+    <h2>Animações</h2>
+    <p>Uma das formas de fazer animação é usando o <strong>"transition: tag_escolhida ...segundos"</strong>.Exemplo: transition: border 3s -> A borda irá aparecer em 3 segundos, o interessante é usar no :hover.</p>
+    <hr>
+    <h2>Formulários</h2>
+    <p>Todas as partes de um formulários devem estar entre as tag <strong>&lt;form&gt;</strong>. É preciso definir o <strong>action="..."</strong> para indicar para qual arquivo back-end devem ir esses dados. <br> Todos as caixas que vão recolher informações deve estar com tag <strong>&lt;input&gt;</strong>, sendo necessário definir o seu <strong>type</strong> e <strong>name</strong>. O name é importante para linguagens back-end e para o HTML, o id é importante para o Javascript. Além disso, é <strong>necessário</strong> definir um <strong>label</strong> que se relaciona ao <strong>id</strong>. Veja o exemplo abaixo: <br>
+    <br> &lt;form action="arquivo_back_end.php"&gt; <br> 
+    &lt;p&gt;&lt;label for="inome"&gt;Nome: &lt;/label&gt;
+    <br> &lt;input type="text" name ="nome" id="inome"&gt&lt;/p&gt;</p>
+    <p>Caso deseje desativar o auto-completar basta inserir <strong>"autocomplete="off"</strong> dentro da tag.</p>
+</body>
+</html>
